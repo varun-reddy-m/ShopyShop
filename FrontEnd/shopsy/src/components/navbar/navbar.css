@@ -1,11 +1,12 @@
 .navbar{
     display: flex;
     justify-content: space-around;
-    padding: 10px;
+    padding: 5px;
+    background-color: rgba(248, 183, 122, 0.644);
     box-shadow: 0 1px 3px -2px rgb(8, 1, 39);
 }
 
-.navlogo{
+.nav-logo{
     display: flex;
     align-items: center;
     gap: 10px;
@@ -13,8 +14,10 @@
 
 .nav-logo p{
     color: rgb(20, 22, 53);
-    font-size: 1.8rem;
-    font-weight: 600;
+    font-size: 3.2rem;
+    font-weight: 800;
+    margin: 0;
+    font-family: 'Qwitcher Grypen';
 }
 
 .nav-menu{
@@ -26,3 +29,72 @@
     font-size: 1.1rem;
     font-weight: 400;
 }
+
+.nav-menu li:hover{
+    color: rgb(20, 22, 53);
+    cursor: pointer;
+}
+
+.nav-menu li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    text-decoration: none;
+}
+.nav-menu li a{
+    text-decoration: none;
+    color:rgb(82, 140, 141);
+}
+
+.nav-menu hr{
+    border: none;
+    width: 80%;
+    height: 3px;
+    border-radius: 10px;
+    background-color: sandybrown;
+}
+
+.nav-login-cart{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-login-cart button{
+    width: 150px;
+    height: 40px;
+    outline: none;
+    border: 1px solid sandybrown;
+    border-radius: 75px;
+    color: rgb(68, 118, 119); 
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: rgb(255, 250, 236);
+    cursor: pointer;
+}
+
+.nav-login-cart button:hover{
+    background-color: sandybrown;
+    color: rgb(255, 250, 236);
+}
+
+.nav-login-cart button:active{
+    background-color: sandybrown;
+    color: black;
+}
+
+.nav-cart-count{
+    width: 1.1rem;
+    height: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -30px;
+    margin-top: -30px;
+    border-radius: 10px;
+    background-color: rgb(255, 208, 106);
+    color: rgb(75, 73, 73);
+}
+
